@@ -2,11 +2,10 @@
 
 A web application that leverages pure WebRTC protocol, Google Firestore as a signaling server, and Chromium Tab sharing protocal to allow screen sharing with audio, which enable the ability for folks to catch up and enjoy music and videos together despite the distance.
 
-  <a href="https://letsthango.firebaseapp.com" target="_blank">Application</a>   
-  <!-- <a href="https://www.patreon.com/letsthango" target='_blank'>Support the Project</a> -->
+  <a href="https://streamssync.vercel.app/" target="_blank">Application</a>   
 
 # Motivation
-I'm currently in a long distance relationship myself and has been for the past three years. I understand the longing desire to watch and share experiences with your partner, and how most platforms out there are not dedicate to this need, while allowing video conversation simultaneously. I am setting out to solve the problem once and for all, hence the creation of Let's Thango.
+I'm currently in a long distance relationship myself and has been for the past three years. I understand the longing desire to watch and share experiences with your partner, and how most platforms out there are not dedicate to this need, while allowing video conversation simultaneously. I am setting out to solve the problem once and for all, hence the creation of StreamSync.
 
 # Features
 - Sharing screen with audio using Chromium-based browsers.     
