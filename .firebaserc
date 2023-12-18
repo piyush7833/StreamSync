@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "zoom"
-  }
+    "default": "zoom",
+    "zoom": "zoom-d485d"
+  },
+  "targets": {},
+  "etags": {}
 }
