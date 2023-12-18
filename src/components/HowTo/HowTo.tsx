@@ -6,7 +6,7 @@ import {
 } from '@material-ui/core';
 import './HowTo.css';
 
-const imagePath = `${process.env.PUBLIC_URL}/howto/`;
+const imagePath = `${process.env.PUBLIC_URL2}/howto/`;
 
 export const HowTo = () => {
 

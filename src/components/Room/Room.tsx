@@ -918,7 +918,7 @@ export const Room = () => {
 
           <div className="videos" id='localVideoContainer'>
             <span>
-              <video id="localVideo" ref={localVideo} autoPlay playsInline poster={`${process.env.PUBLIC_URL}/user_placeholer.`}></video>
+              <video id="localVideo" ref={localVideo} autoPlay playsInline poster={`${process.env.PUBLIC_URL2}/user_placeholer.`}></video>
             </span>
             <div className='name'>
               <div>

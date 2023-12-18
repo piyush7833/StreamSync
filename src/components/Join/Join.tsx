@@ -13,16 +13,8 @@ import { config } from '../../shared';
 import { v4 as uuidv4 } from 'uuid';
 import Typography from '@material-ui/core/Typography';
 
-const { logoCount } = config;
-
-const getLogoPath = (): string => {
-  // const index = Math.floor(Math.random() * (logoCount)) + 1;
-  const index = 6;
-  return `${process.env.PUBLIC_URL}/logo_${index}.png`;
-}
 
 export const Join = () => {
-  const logo = useRef<string>(getLogoPath());
   const [name, setName] = useState<string>('');
   const [callID, setCallID] = useState<string>('');
   const { openAlert, setOpenAlert, alertMessage, alertType, fireAlert} = useAlert();
@@ -124,7 +116,7 @@ export const Join = () => {
           <a rel='noreferrer' target='_blank' href={ROUTES.GIT}>Check me out on Github!</a>
         </div>
         <div id='logoContainer'>
-          <img src={logo.current} alt='logo'/>
+          <img src='public/logo_6.png' alt='logo'/>
         </div>
       </div>
 
