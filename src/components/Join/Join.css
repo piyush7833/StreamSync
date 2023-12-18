@@ -25,6 +25,7 @@
 #inputContainer > * {
     width: 80%;
     margin-bottom: 10px;
+    background: transparent;
 }
 
 #inputContainer label {
@@ -43,7 +44,8 @@
     font-weight: bold;
 }
 button:disabled {
-    background-color: #E5C9D2 !important;
+    background-color: #c9cbe5 !important;
+    cursor: not-allowed !important;
 }
 
 .MuiInput-underline:after {
