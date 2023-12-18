@@ -1,5 +1,5 @@
 {
-  "name": "letsthango",
+  "name": "StreamSync",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -27,7 +27,7 @@
     "yarn": "^1.22.21"
   },
   "scripts": {
-    "start": "react-scripts --openssl-legacy-provider start",
+    "start": "react-scripts",
     "build": "react-scripts build",
     "deploy": "GENERATE_SOURCEMAP=false react-scripts build;firebase deploy --only hosting",
     "test": "react-scripts test",
