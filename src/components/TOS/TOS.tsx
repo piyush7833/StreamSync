@@ -6,7 +6,7 @@ export const TOS = () => {
     <>
       <div id='TOS'>
         <Typography variant="h4" gutterBottom>
-            Let's Thango Terms of Service and User License
+            StreamSync Terms of Service and User License
         </Typography>
         <Typography variant="body1" gutterBottom>
             <p>This Let's Thango Terms of Service and User License ("TOS" or this “Agreement”) governs any access to and use of the applications, services and websites (collectively “Company Services”) offered or made available by Let's Thango ("Company" or “we/us”) at <a href='https://letsthango.web.app'>https://letsthango.web.app</a>, or through corresponding sites on social media outlets. This TOS is subject to modification from time to time as described below and You can review the most current version at any time at: <a href='https://letsthango.web.app/tos'>https://letsthango.web.app/tos</a>.</p>

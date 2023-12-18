@@ -16,8 +16,9 @@ import Typography from '@material-ui/core/Typography';
 const { logoCount } = config;
 
 const getLogoPath = (): string => {
-  const index = Math.floor(Math.random() * (logoCount)) + 1;
-  return `${process.env.PUBLIC_URL}/logo_${index}.jpg`;
+  // const index = Math.floor(Math.random() * (logoCount)) + 1;
+  const index = 6;
+  return `${process.env.PUBLIC_URL}/logo_${index}.png`;
 }
 
 export const Join = () => {
@@ -103,22 +104,23 @@ export const Join = () => {
         <div id='inputContainer'>
 
           <Typography variant="h5" gutterBottom>
-            <i>It takes two to </i><span id='brand'>Thango</span>
+            <i>It takes two to </i><span id='brand'>StreamSync</span>
           </Typography>
           <br />
 
           <TextField id='name' label='Display Name' variant='standard' value={name} onChange={(e) => setName(e.target.value)}/>
+          <TextField id='callID' label='Call ID (If Joinining)'  variant='standard' value={callID} onChange={(e) => setCallID(e.target.value)}/>
+
           <Button id='createCallBtn' variant='contained' onClick={handleCreateCall} disabled={callID.length > 0}>Create Call</Button>
 
-          <TextField id='callID' label='Call ID'  variant='standard' value={callID} onChange={(e) => setCallID(e.target.value)}/>
           <Button id='joinCallBtn' variant='contained' color='secondary' onClick={handleJoinCall} disabled={callID.length === 0}>Join Call</Button>
 
           <br />
           <Link to={ROUTES.HOW_TO}>How it works?</Link>
-          <Link to={ROUTES.TOS}>Terms of Service</Link>
+          {/* <Link to={ROUTES.TOS}>Terms of Service</Link> */}
           <br />
-          <a rel='noreferrer' target='_blank' href={ROUTES.BUY_ME_TEA}>Buy me a cup of tea!</a>
-          <a rel='noreferrer' target='_blank' href={ROUTES.PATREON}>Support the project on Patreon!</a>
+          {/* <a rel='noreferrer' target='_blank' href={ROUTES.BUY_ME_TEA}>Buy me a cup of tea!</a> */}
+          {/* <a rel='noreferrer' target='_blank' href={ROUTES.PATREON}>Support the project on Patreon!</a> */}
           <a rel='noreferrer' target='_blank' href={ROUTES.GIT}>Check me out on Github!</a>
         </div>
         <div id='logoContainer'>

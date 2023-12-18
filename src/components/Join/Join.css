@@ -11,11 +11,11 @@
 
 #logoContainer img {
     object-fit: cover;
-    width: 75vw;
+    width: 70vw;
 }
 
 #inputContainer {
-    width: 25vw;
+    width: 30vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
