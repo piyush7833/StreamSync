@@ -1,6 +1,6 @@
 # Welcome to StreamSync
 
-A web application that leverages pure WebRTC protocal, Google Firestore as a signaling server, and Chromium Tab sharing protocal to allow screen sharing with audio, which enable the ability for folks to catch up and enjoy music and videos together despite the distance.
+A web application that leverages pure WebRTC protocol, Google Firestore as a signaling server, and Chromium Tab sharing protocal to allow screen sharing with audio, which enable the ability for folks to catch up and enjoy music and videos together despite the distance.
 
   <a href="https://letsthango.firebaseapp.com" target="_blank">Application</a>   
   <!-- <a href="https://www.patreon.com/letsthango" target='_blank'>Support the Project</a> -->
