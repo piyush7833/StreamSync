@@ -35,11 +35,11 @@
     font-family: 'Dancing Script', cursive;
     font-size: 80px;
     margin-bottom: 30px;
-    color: palevioletred;
+    color: rgb(71, 109, 233);
 }
 
 #createCallBtn, #joinCallBtn {
-    background-color: #AF5A76;
+    background-color: rgb(68, 95, 184);;
     font-weight: bold;
 }
 button:disabled {

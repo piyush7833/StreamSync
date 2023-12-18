@@ -111,7 +111,7 @@ export const Join = () => {
           <TextField id='name' label='Display Name' variant='standard' value={name} onChange={(e) => setName(e.target.value)}/>
           <TextField id='callID' label='Call ID (If Joinining)'  variant='standard' value={callID} onChange={(e) => setCallID(e.target.value)}/>
 
-          <Button id='createCallBtn' variant='contained' onClick={handleCreateCall} disabled={callID.length > 0}>Create Call</Button>
+          <Button id='createCallBtn' variant='contained' onClick={handleCreateCall} disabled={callID.length > 0 || name.length===0}>Create Call</Button>
 
           <Button id='joinCallBtn' variant='contained' color='secondary' onClick={handleJoinCall} disabled={callID.length === 0}>Join Call</Button>
 
