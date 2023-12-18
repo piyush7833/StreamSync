@@ -1,6 +1,6 @@
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
-import { useState, useRef } from 'react';
+import { useState } from 'react';
 import { useHistory } from 'react-router';
 import { Link } from 'react-router-dom';
 import './Join.css';
@@ -9,10 +9,11 @@ import { db, analytics } from '../../libs';
 import { useAlert } from '../../hooks';
 import * as ROUTES from '../../routes';
 import { ALERT_TYPE, CALL_TYPE } from '../../interfaces';
-import { config } from '../../shared';
+// import { config } from '../../shared';
 import { v4 as uuidv4 } from 'uuid';
 import Typography from '@material-ui/core/Typography';
-
+import bgImage from '../../logo/StreamSync-logos.jpeg'
+// const imagePath = `${process.env.PUBLIC_URL2}/howto/`
 
 export const Join = () => {
   const [name, setName] = useState<string>('');
@@ -89,7 +90,6 @@ export const Join = () => {
     }
     main();
   }
-
   return (
     <>
       <div id='joinContainer'>
@@ -116,7 +116,7 @@ export const Join = () => {
           <a rel='noreferrer' target='_blank' href={ROUTES.GIT}>Check me out on Github!</a>
         </div>
         <div id='logoContainer'>
-          <img src='public/logo_6.png' alt='logo'/>
+        <img src={bgImage} alt={`public/logo192.png`}/>
         </div>
       </div>
 

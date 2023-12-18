@@ -1,5 +1,4 @@
 import React from 'react';
-import { SpeedInsights } from "@vercel/speed-insights/next"
 import {
   BrowserRouter as Router,
   Route,
