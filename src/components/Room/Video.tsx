@@ -6,7 +6,7 @@ import VolumeDown from '@material-ui/icons/VolumeDown';
 import VolumeOffSharpIcon from '@material-ui/icons/VolumeOffSharp';
 import makeStyles from '@material-ui/core/styles/makeStyles';
 import Tooltip from '@material-ui/core/Tooltip';
-
+import './Room.css';
 import { db } from '../../libs';
 import {
   User
@@ -48,13 +48,15 @@ export const Video = memo(({
 
   const handlePIP = () => {
     if (videoRef.current) {
+      videoRef.current.requestPictureInPicture()
+      console.log("first")
     }
   }
 
   return (
     <div className={`videos ${videoID.slice(1,)}`}>
       <span>
-        <video width='100%' id={videoID} ref={videoRef} autoPlay playsInline onDoubleClick={handlePIP}></video>
+        <video id={videoID}ref={videoRef} autoPlay playsInline style={{objectFit:'contain', width:'auto'}} onDoubleClick={handlePIP}></video>
       </span>
       <div className='name'>
         <div>

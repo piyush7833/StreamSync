@@ -860,7 +860,7 @@ export const Room = () => {
 
   return (
     <>
-      <div id="roomContainer" className={isSharing ? 'sharing' : 'standalone'}>
+      <div id={ isSharing?"isRoomShared":"isRoomNotShared"} className={isSharing ? 'sharing' : 'standalone'}>
         {
           isSharing
           ? (
@@ -880,7 +880,7 @@ export const Room = () => {
           )
           : ''
         }
-        <div ref={videoContainer} id='videoContainer'>
+        <div ref={videoContainer} id="videoContainer">
           {
             Object.values(
               sessionState

@@ -105,7 +105,7 @@ export const Join = () => {
 
           <Button id='createCallBtn' variant='contained' onClick={handleCreateCall} disabled={callID.length > 0 || name.length===0}>Create Call</Button>
 
-          <Button id='joinCallBtn' variant='contained' color='secondary' onClick={handleJoinCall} disabled={callID.length === 0 || name.length==0}>Join Call</Button>
+          <Button id='joinCallBtn' variant='contained' color='secondary' onClick={handleJoinCall} disabled={callID.length === 0 || name.length===0}>Join Call</Button>
 
           <br />
           <Link to={ROUTES.HOW_TO}>How it works?</Link>

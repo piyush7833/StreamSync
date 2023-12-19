@@ -1,4 +1,4 @@
-#roomContainer {
+#isRoomShared, #isRoomNotShared {
   overflow: hidden;
   background-color: #0f1419;
   color: white;
@@ -25,7 +25,7 @@
 .videos {
   display: flex;
   position: relative;
-  background-color: ;
+  background-color: transparent;
 }
 
 .videos .action {
@@ -108,4 +108,17 @@
   bottom: 0;
   width: 100vw;
   height: 75px;
+}
+
+@media (max-width: 1000px){
+  #shareVideo {
+    width: 100vw;
+  }
+  #videoContainer {
+    width: 100vw;
+    flex-direction: row;
+  }
+  #shareContainer {
+    width: 0vw;
+  }
 }

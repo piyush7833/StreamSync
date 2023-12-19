@@ -55,3 +55,14 @@ button:disabled {
 input, .MuiCheckbox-root  {
     color: white !important;
 }
+
+@media (max-width: 1500px){
+    #logoContainer img {
+        object-fit: none;
+        width: 0vw;
+    }
+    
+    #inputContainer {
+        width: 100vw;
+    }
+}
